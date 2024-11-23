@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sreen.AddMahasiswaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Tombol Simpan -->
+        <ImageView
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/baseline_done_24"
+            android:contentDescription="Tombol Simpan"
+            android:padding="8dp" />
+
+        <!-- Heading -->
+        <TextView
+        android:id="@+id/addMahasiswaHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Tambah Mahasiswa"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:layout_marginEnd="16dp" />
+
+        <!-- Input Nama -->
+        <EditText
+            android:id="@+id/namaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama"
+            android:layout_below="@id/addMahasiswaHeading"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/blue_border"
+            android:padding="12dp" />
+
+        <!-- Input NIM -->
+        <EditText
+            android:id="@+id/nimEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan NIM"
+            android:layout_below="@id/namaEditText"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/blue_border"
+            android:padding="12dp" />
+
+        <!-- Input Jurusan -->
+        <EditText
+            android:id="@+id/jurusanEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Jurusan"
+            android:layout_below="@id/nimEditText"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/blue_border"
+            android:padding="12dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
